@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import Nav from "~/components/nav"
+import stylesUrl from "~/styles/index.css"
 import {
   Links,
   LiveReload,
@@ -13,6 +15,11 @@ export const meta: MetaFunction = () => ({
   title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
+export const links = () => {
+  return [
+    { rel: "stylesheet", href: stylesUrl, },
+  ]
+}
 
 export default function App() {
   return (
@@ -21,7 +28,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-nord0">
+        <Nav />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

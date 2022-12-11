@@ -1,6 +1,8 @@
 node_modules
+*\.swp
 
 /.cache
 /build
 /public/build
 .env
+/app/styles/index.css
