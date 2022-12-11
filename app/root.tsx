@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import Nav from "~/components/nav"
 import stylesUrl from "~/styles/index.css"
 import {
   Links,
@@ -27,7 +28,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-nord0">
+        <Nav />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
