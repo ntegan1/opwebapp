@@ -2,6 +2,18 @@ import { Client } from "ssh2";
 import { useEffect } from "react"
 
 function SSH() {
+  function test() {
+    const c = new Client()
+  }
+  
+  useEffect(() => {
+    console.log("mount")
+    test()
+    
+    return () => {
+      console.log("unmount")
+    }
+  }, [])
   return (
     <p>hi</p>
   )
