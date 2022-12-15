@@ -27,7 +27,8 @@ export default function Nav() {
     return (
       <div className="flex items-center">
       <NavLink to="/" className={nlclasshome}>Home</NavLink>
-      <NavLink to="/indexold" className={nlclass}>old remix default index</NavLink>
+      <NavLink to="/ssh" className={nlclass}>SSH</NavLink>
+      <NavLink to="/indexold" className={nlclass}>Old</NavLink>
       </div>
     )
   }
